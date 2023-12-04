@@ -1,0 +1,25 @@
+<div>
+  <h1>Productos con WebSockets:</h1>
+  <form id="form">
+    <h4>Ingrese un producto: </h4>
+    <input type="text" placeholder="Nombre" id="title" required />
+    <input type="text" placeholder="Descripción" id="description" required />
+    <input type="number" placeholder="Código" id="code" required />
+    <input type="number" placeholder="Precio" id="price" required />
+    <input type="text" placeholder="Disponibilidad" id="status" required />
+    <input type="number" placeholder="Stock" id="stock" required />
+    <input type="text" placeholder="Categoría" id="category" required />
+    <br>
+    <button type="submit" style="border: none; background-color: green; color: white; cursor: pointer; width: 200px; height: 50px">Agregar</button>
+  </form>
+
+  <div>
+    <div>
+      <h2>Lista de productos:</h2>
+      <div id="textbox" style="display: flex; flex-wrap: wrap; gap: 50px"></div>
+    </div>
+  </div>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/home.js"></script>
